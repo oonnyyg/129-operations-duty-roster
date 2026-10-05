@@ -1,0 +1,16 @@
+{
+  "people": [
+    {"id": "A", "qualification": "medic", "max_minutes": 480,
+     "unavailable": [{"start": "2026-01-01T04:00:00Z", "end": "2026-01-01T06:00:00Z"}]},
+    {"id": "B", "qualification": "medic", "max_minutes": 480, "unavailable": []},
+    {"id": "C", "qualification": "driver", "max_minutes": 240, "unavailable": []}
+  ],
+  "shifts": [
+    {"id": "s1", "interval": {"start": "2026-01-01T00:00:00Z", "end": "2026-01-01T02:00:00Z"}, "qualification": "medic"},
+    {"id": "s2", "interval": {"start": "2026-01-01T02:00:00Z", "end": "2026-01-01T04:00:00Z"}, "qualification": "medic"},
+    {"id": "s3", "interval": {"start": "2026-01-01T04:00:00Z", "end": "2026-01-01T06:00:00Z"}, "qualification": "medic"},
+    {"id": "s4", "interval": {"start": "2026-01-01T01:00:00Z", "end": "2026-01-01T03:00:00Z"}, "qualification": "driver"}
+  ],
+  "config": {"min_rest_minutes": 60},
+  "fixed": {"s2": "A"}
+}
